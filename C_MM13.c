@@ -7,6 +7,9 @@
 
 
 int main(){
-    double a;
-    while(scanf("%lf", &a) != EOF) printf("%d\n", (int)ceil(a / 0.238));
+    int a, b, c, d, h, m, t; scanf("%d%d%d%d", &a, &b, &c, &d);
+    h = c - a, m = d - b, t = h * 60 + m;
+    if(t <= 120) printf("%d\n", t / 30 * 30);
+    else if(t <= 180) printf("%d\n", (t - 120) / 30 * 40 + 120);
+    else printf("%d\n", (t - 240) / 30 * 60 + 280);
 }
