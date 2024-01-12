@@ -9,5 +9,5 @@
 
 int main(){
     double a;
-    while(scanf("%lf", &a) != EOF) printf("%.1lf\n", ((double)round(a * a * 10)) / 10);
+    while(scanf("%lf", &a) != EOF) printf("%.1lf\n", ((double)round(a * 1.6 * 10)) / 10);
 }
