@@ -4,13 +4,9 @@
 #include <math.h>
 #define and &&
 #define or ||
-#define round(x) (int)((x) + 0.5)
+
 
 int main(){
-    int a;
-    scanf("%d", &a);
-    printf("NT10=%d\n"
-           "NT5=%d\n"
-           "NT1=%d",
-           a / 10, (a % 10) / 5, a % 5);
+    double a;
+    while(scanf("%lf", &a) != EOF) printf("%d\n", (int)ceil(a / 0.238));
 }
